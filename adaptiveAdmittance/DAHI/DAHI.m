@@ -1,14 +1,14 @@
 clear all;
 
 t = 0.01;
-m = 1; k =0;  b =65;
+m = 1; k =0;  b =80;
 xc = 0; dxc= 0; ddxc = 0;
 xe = 0; dxe = 0; ddxe= 0;
 delta_dxc = 0; delta_dxe=0;
 de=0;
 
 fd = 50;
-ke = 4000;  
+ke = 5000;  
 phi_t = 0;
 fe = 0;
 delta_f = 0;
@@ -23,9 +23,9 @@ U_limit = (m + b*t)/b * t;
 
 for i=1 :200
     
-    xe(i+1) = 2*sin(i*2*pi/200);
-    dxe(i+1) = 2*pi/100*cos(i*2*pi/200);
-    ddxe(i+1) = -2*(pi/100)^2*sin(i*2*pi/200);
+    xe(i+1) = 0.1*sin(i*2*pi/200);
+    dxe(i+1) = 0.1*pi/100*cos(i*2*pi/200);
+    ddxe(i+1) = -0.1*(pi/100)^2*sin(i*2*pi/200);
     fe(i+1) = ke * (xe(i+1) - xc(i));
 
     % Read force sensors
