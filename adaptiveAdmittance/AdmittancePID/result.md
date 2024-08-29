@@ -1,1 +1,1 @@
-![admittancePIDresult](/robots/control/adaptiveAdmittance/AdmittancePID/pic/admittancePID.jpg)
+![admittancePIDresult](/adaptiveAdmittance/AdmittancePID/pic/admittancePID.jpg)
