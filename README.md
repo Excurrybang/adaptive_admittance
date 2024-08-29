@@ -4,6 +4,9 @@ simple adaptive admittance control implementation in matlab.
 
 The force only effectes z direction
 
+inspired from https://github.com/OpenRobotSL/RobotForceControl
+
+
 ## The implementation
 
 all the implementations are finished in matlab to follow the sin trajectory only in z direction and keep the constant contact force
